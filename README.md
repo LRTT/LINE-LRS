@@ -1,2 +1,2 @@
-# LineLRS
+# LINE LRS
 Line register secondary
