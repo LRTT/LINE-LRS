@@ -171,7 +171,7 @@ def rsaEncrypt(plain, nvalue, evalue):
     key = rsa.PublicKey(int(nvalue, 16), int(evalue, 16))
     return rsa.encrypt(plain, key).hex()
 
-def registerSecondaryWithPhone(country, phone, password, name=None, debug=False):
+def registerSecondaryWithPhone(country, phone, password, name=None, mail=None, debug=False):
     debugger = lambda string: print(string) if debug else None
     client = LineLRS(country, phone, password)
     startVerificationResponse = client.startVerification()
